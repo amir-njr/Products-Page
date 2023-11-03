@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 1200px;
+  border: 1px solid red;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.header {
+  background-color: blue;
+  height: 80px;
+  color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 0 0 10px 10px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form input {
+  border-radius: 5px;
+  padding: 4px;
+  border: 2px solid blue;
+}
+.form input:focus {
+  outline: none;
+  background-color: rgb(224, 231, 233);
+  transition: all 0.3s;
+}
+.btns {
+  display: flex;
+  gap: 15px;
+}
+.btns button {
+  background-color: white;
+  border-radius: 5px;
+  padding: 4px;
+  width: 60px;
+  border: 2px solid blue;
+  color: blue;
+}
+.srchBtn {
+  background-color: blue;
+  padding: 6px 4px;
+  width: 80px;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
