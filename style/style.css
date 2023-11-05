@@ -2,14 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .container {
   width: 1200px;
-  border: 1px solid red;
   margin: auto;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 60px;
 }
 .header {
   background-color: blue;
@@ -19,39 +19,73 @@
   align-items: center;
   border-radius: 0 0 10px 10px;
 }
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
 .form {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.form input {
+input {
   border-radius: 5px;
-  padding: 4px;
+  padding: 8px 4px;
+  width: 300px;
   border: 2px solid blue;
+  color: blueviolet;
+  font-weight: bold;
 }
-.form input:focus {
+input:focus {
   outline: none;
-  background-color: rgb(224, 231, 233);
+  background-color: rgb(212, 238, 252);
   transition: all 0.3s;
 }
 .btns {
   display: flex;
   gap: 15px;
 }
-.btns button {
+button {
   background-color: white;
   border-radius: 5px;
-  padding: 4px;
   width: 60px;
+  padding: 8px 4px;
   border: 2px solid blue;
   color: blue;
 }
 .srchBtn {
+  padding: 10px 4px;
   background-color: blue;
-  padding: 6px 4px;
   width: 80px;
   color: white;
   border: none;
   font-weight: bold;
   border-radius: 5px;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  justify-content: space-between;
+  gap: 15px;
+}
+.products div {
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 5px;
+}
+.products img {
+  width: 100%;
+  border-radius: 10px;
+}
+.products span {
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  width: 80px;
+  text-align: center;
+  padding: 2px 4px;
+  border-radius: 5px;
+  margin-top: 6px;
+  display: inline-block;
 }
