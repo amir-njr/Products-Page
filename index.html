@@ -13,76 +13,70 @@
 
     <main class="main">
       <div class="form">
-        <input type="text" placeholder="Search Name ..." />
+        <input id="searchProducts" type="text" placeholder="Search Name ..." />
 
         <div class="btns">
-          <button>All</button>
-          <button>Tech</button>
-          <button>Clothing</button>
-          <button>Health</button>
+          <button class="categoryBtn" data-filter="all">All</button>
+          <button class="categoryBtn" data-filter="tech">Tech</button>
+          <button class="categoryBtn" data-filter="clothing">Clothing</button>
+          <button class="categoryBtn" data-filter="health">Health</button>
         </div>
         <div>
-          <input type="number" placeholder="Search Price ..." />
-          <button class="srchBtn">Search</button>
+          <input id="priceInput" type="number" placeholder="Search Price ..." />
+          <button id="priceBtn">Search</button>
         </div>
       </div>
 
       <div class="products">
-        <div>
+        <div class="product" data-category="tech">
           <img src="/img/airpods.png" alt="Products Photo" />
           <h1>Airpods</h1>
           <span>$ 450</span>
         </div>
 
-        <div>
+        <div class="product" data-category="clothing">
           <img src="./img/bag.png" alt="Products Photo" />
           <h1>Bag</h1>
           <span>$ 255</span>
         </div>
 
-        <div>
+        <div class="product" data-category="health">
           <img src="./img/cream.png" alt="Products Photo" />
           <h1>Cream</h1>
           <span>$ 39</span>
         </div>
 
-        <div>
+        <div class="product" data-category="tech">
           <img src="./img/iphone.png" alt="Products Photo" />
           <h1>Iphone</h1>
           <span>$ 350</span>
         </div>
 
-        <div>
+        <div class="product" data-category="clothing">
           <img src="./img/jacket.png" alt="Products Photo" />
-          <h1>Airpods</h1>
+          <h1>Jacket</h1>
           <span>$ 245</span>
         </div>
 
-        <div>
-          <img src="/img/airpods.png" alt="Products Photo" />
-          <h1>Jacket</h1>
-          <span>$ 88</span>
-        </div>
-
-        <div>
+        <div class="product" data-category="health">
           <img src="./img/shampoo.png" alt="Products Photo" />
           <h1>Shampoo</h1>
           <span>$ 10</span>
         </div>
 
-        <div>
+        <div class="product" data-category="clothing">
           <img src="./img/shoes.png" alt="Products Photo" />
           <h1>Shoes</h1>
           <span>$ 220</span>
         </div>
 
-        <div>
+        <div class="product" data-category="health">
           <img src="./img/vitamin.png" alt="Products Photo" />
           <h1>Vitamin</h1>
           <span>$ 79</span>
         </div>
 
-        <div>
+        <div class="product" data-category="tech">
           <img src="./img/watch.png" alt="Products Photo" />
           <h1>Watch</h1>
           <span>$ 160</span>
